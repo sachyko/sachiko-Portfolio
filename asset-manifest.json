@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/sachiko-portfolio/static/css/main.1a614840.css",
-    "main.js": "/sachiko-portfolio/static/js/main.5fdf2ec2.js",
-    "static/js/488.ad91f53a.chunk.js": "/sachiko-portfolio/static/js/488.ad91f53a.chunk.js",
-    "static/media/girlscode.jpg": "/sachiko-portfolio/static/media/girlscode.15400c8d5f7a6c141a04.jpg",
-    "index.html": "/sachiko-portfolio/index.html",
-    "main.1a614840.css.map": "/sachiko-portfolio/static/css/main.1a614840.css.map",
-    "main.5fdf2ec2.js.map": "/sachiko-portfolio/static/js/main.5fdf2ec2.js.map",
-    "488.ad91f53a.chunk.js.map": "/sachiko-portfolio/static/js/488.ad91f53a.chunk.js.map"
+    "main.css": "/sachiko-Portfolio/static/css/main.1a614840.css",
+    "main.js": "/sachiko-Portfolio/static/js/main.f174dd79.js",
+    "static/js/488.ad91f53a.chunk.js": "/sachiko-Portfolio/static/js/488.ad91f53a.chunk.js",
+    "static/media/girlscode.jpg": "/sachiko-Portfolio/static/media/girlscode.15400c8d5f7a6c141a04.jpg",
+    "index.html": "/sachiko-Portfolio/index.html",
+    "main.1a614840.css.map": "/sachiko-Portfolio/static/css/main.1a614840.css.map",
+    "main.f174dd79.js.map": "/sachiko-Portfolio/static/js/main.f174dd79.js.map",
+    "488.ad91f53a.chunk.js.map": "/sachiko-Portfolio/static/js/488.ad91f53a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1a614840.css",
-    "static/js/main.5fdf2ec2.js"
+    "static/js/main.f174dd79.js"
   ]
 }
