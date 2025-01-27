@@ -71,7 +71,7 @@ const Footer = () => {
 				</div>
 				<button className={styles.button}>Get In Touch</button>
 			</div>
-			<div className={styles.footer2}>
+			{/* <div className={styles.footer2}>
 				<div className={styles.text}>
 					<p>ponponsachiko23@gmail.com</p>
 					<p>+81 80-9725-1196</p>
@@ -90,16 +90,14 @@ const Footer = () => {
 						</li>
 					</ul>
 				</div>
-				{/* <li>
-					<Link to="/contact">Contact</Link>
-				</li> */}
+				
 				<div className={styles.media}>
 					<h2>Social Media</h2>
 					<a href={github} target="_blank" rel="noopener noreferrer">
 						<p>Github</p>
 					</a>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };

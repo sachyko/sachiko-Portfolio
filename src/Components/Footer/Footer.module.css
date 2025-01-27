@@ -5,26 +5,30 @@
 	align-items: center;
 	padding: 5px 40px;
 }
-
+.footerContainer {
+	background-color: #7f1f0e;
+	padding: 5px;
+}
 .footer1 h1 {
 	font-family: "Playfair Display", serif;
 	font-size: 40px;
 	font-weight: 800;
-	color: #7f1f0e;
+	color: #dac1b1;
 	width: 400px;
 }
 
 .footer1 p {
-	color: #3d0a05;
+	color: #ac746c;
 	font-family: "Lora", serif;
 	font-style: italic;
+	font-weight: 900;
 	width: 400px;
 	text-align: justify;
 }
 
 .button {
 	margin: 50px;
-	background: linear-gradient(90deg, #7f170e, #3d0a05);
+	background: linear-gradient(90deg, #7f1f0e, #ac746c);
 	border: none;
 	border-radius: 30px;
 	cursor: pointer;
