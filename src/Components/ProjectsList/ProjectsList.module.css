@@ -1,0 +1,24 @@
+.projectsList {
+	background-color: #3d0a05;
+	text-align: center;
+	padding: 5px;
+}
+
+.title {
+	color: #dac1b1;
+	font-family: "Playfair Display", serif;
+	font-size: 80px;
+}
+.projectsListContainer {
+	background-color: #3d0a05;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.projectsList .column:nth-child(odd) {
+	width: 50%;
+}
+.about-container .column:nth-child(even) {
+	width: 50%;
+}

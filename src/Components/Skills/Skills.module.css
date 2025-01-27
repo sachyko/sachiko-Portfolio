@@ -1,0 +1,39 @@
+.skills {
+	background-color: #dac1b1;
+	text-align: center;
+}
+
+.skills h1 {
+	font-family: "Playfair Display", serif;
+	padding-top: 60px;
+	text-align: center;
+	font-size: 50px;
+	color: #3d0a05;
+}
+
+.skillscontainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+}
+
+.skill {
+	padding-left: 20px;
+}
+.skill img {
+	width: 200px;
+	height: auto;
+	object-fit: cover;
+	box-sizing: border-box;
+	border: 10px solid #ac746c;
+	padding: 10px;
+}
+
+.skill p {
+	text-align: center;
+	font-family: "Lora", serif;
+	font-size: 20px;
+	color: #3d0a05;
+	margin-top: 0;
+}
