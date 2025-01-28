@@ -13,7 +13,7 @@ const AboutMe = () => {
 	});
 	return (
 		<div className={styles.aboutme} ref={ref}>
-			<img src={me} logo="woman" />
+			<img src={me} alt="woman" />
 			<div className={styles.aboutmeInfo}>
 				<motion.h1
 					initial={{ opacity: 0, y: 20 }}

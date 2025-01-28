@@ -15,6 +15,7 @@ const ProjectsList = ({ info }) => {
 			<div className={styles.projectsListContainer}>
 				{info.map((info) => (
 					<Projects
+						key={info.name}
 						src={info.src}
 						name={info.name}
 						category={info.category}

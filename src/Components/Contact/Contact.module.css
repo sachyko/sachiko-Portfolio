@@ -1,0 +1,128 @@
+.contactContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+	gap: 30px;
+	flex-wrap: wrap;
+	margin: 70px;
+}
+
+.contactText {
+	padding: 0 0 0 240px;
+}
+.contactContainer h1 {
+	font-family: "Playfair Display", serif;
+	font-size: 40px;
+	font-weight: 800;
+	color: #751f0e;
+	width: 400px;
+}
+
+.contactContainer p {
+	color: #3d0a05;
+	font-family: "Lora", serif;
+	font-style: italic;
+	font-weight: 900;
+	width: 400px;
+	text-align: justify;
+}
+
+.button {
+	text-decoration: none;
+	font-family: "Cormorant Garamond", serif;
+	font-weight: 900;
+	font-size: 20px;
+	color: #751f0e;
+}
+
+.button:hover {
+	color: #dac1b1;
+}
+
+/* form styles */
+.formContainer {
+	background-color: #751f0e;
+	border-radius: 10px;
+	box-shadow: 0 20px 20px rgba(225, 65, 33, 0.1);
+	padding: 20px;
+	width: 100%;
+	max-width: 600px;
+	margin-top: 5px;
+}
+
+.formContainer h2 {
+	color: #dac1b1;
+	font-family: "Cormorant Garamond", serif;
+	font-weight: 900;
+	font-size: 35px;
+	text-align: left;
+}
+
+.formgroup {
+	margin-bottom: 10px;
+}
+
+.formgroup label {
+	padding-right: 10px;
+	color: #a58570;
+	font-family: "Lora", serif;
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.formgroup input {
+	border: none;
+	background: transparent;
+	border-bottom: 2px solid #ac746c;
+	width: 36em;
+	outline: none;
+	font-size: 15px;
+	width: 100%;
+	color: #dac1b1;
+}
+
+.formgroup textarea {
+	resize: none;
+	width: 100%;
+	height: 100%; /* Set a larger height for the textarea */
+	line-height: 1.6;
+	font-size: 15px;
+	background: transparent;
+	border: 2px solid #ac746c;
+	margin-top: 10px;
+	color: #dac1b1;
+}
+
+.formgroup textarea:focus,
+.formgroup input:focus {
+	border: 2px solid #dac1b1; /* Change border color on focus */
+	outline: none;
+	/* Remove default focus outline */
+}
+
+.submit {
+	margin: 40px;
+	background: linear-gradient(90deg, #7f1f0e, #ac746c);
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	box-shadow: 0px 4px 6px rgba(190, 165, 165, 0.2);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	font-family: "Cormorant Garamond", serif;
+	color: #dac1b1;
+	font-size: 25px;
+	padding: 18px 90px;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.submit:hover {
+	transform: scale(1.05);
+	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.submit:active {
+	transform: scale(0.98);
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}

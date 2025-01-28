@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./Footer.module.css";
+import { Link } from "react-router-dom";
 
-const github = "https://github.com/sachyko";
+// const github = "https://github.com/sachyko";
 const Typewriter = ({ text }) => {
 	const [displayedText, setDisplayedText] = useState("");
 	const [index, setIndex] = useState(0);
@@ -69,7 +70,9 @@ const Footer = () => {
 						</>
 					)}
 				</div>
-				<button className={styles.button}>Get In Touch</button>
+				<Link to="/contact" className={styles.button}>
+					Get In Touch
+				</Link>
 			</div>
 			{/* <div className={styles.footer2}>
 				<div className={styles.text}>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import styles from "./Navigation.module.css";
 
 const Navigation = () => {
@@ -8,22 +9,18 @@ const Navigation = () => {
 			<nav>
 				<ul className={styles.navLinks}>
 					<li>
-						<a href="#aboutMe">About Me</a>
+						<Link to="/#aboutMe">About Me</Link>
 					</li>
 					<li>
-						<a href="#skills">Skills</a>
+						<Link to="/#skills">Skills</Link>
 					</li>
 					<li>
-						Sachiko <br />
-						Creates
+						<Link to="/#projects">Sachiko Creates</Link>
 					</li>
 					<li>
-						<a href="#projects">Projects</a>
+						<Link to="/#footer">Contact</Link>
 					</li>
 				</ul>
-				{/* <li>
-					<Link to="/contact">Contact</Link>
-				</li> */}
 			</nav>
 		</header>
 	);
