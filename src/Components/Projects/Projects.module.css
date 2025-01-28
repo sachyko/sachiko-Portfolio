@@ -3,7 +3,7 @@
 	background-color: #ac746a;
 	/* display: flex;
 	flex-direction: column; */
-	width: auto;
+	max-width: 600px; /* Limit max width */
 	height: 550px;
 	transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
 }
@@ -79,13 +79,29 @@ h2 {
 	background-color: rgba(183, 133, 136, 0.46);
 }
 
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 320px) and (max-width: 375px) {
 	.projectsContainer {
-		/* padding: 6px; */
-		height: 580px;
+		width: 68%;
+		height: auto;
+	}
+
+	.projectsContainer img {
+		width: 250px;
+		height: auto;
+	}
+	.info {
+		width: 100%; /* Let the info take the full width of the container */
+	}
+	.info p {
+		font-size: 10px;
 		margin: 10px;
 	}
-	.projectsContainer img {
-		margin-top: 5px;
+
+	.info h1 {
+		font-size: 30px;
+	}
+
+	.info h2 {
+		font-size: 20px;
 	}
 }

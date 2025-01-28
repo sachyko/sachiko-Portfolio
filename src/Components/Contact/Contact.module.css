@@ -5,6 +5,9 @@
 	flex-wrap: wrap;
 	margin: 70px;
 	background-color: #ac746c;
+	max-width: 100vw;
+	margin: 0 auto;
+	padding: 10px 0;
 }
 
 .contactText {
@@ -131,31 +134,43 @@
 
 @media (min-width: 320px) and (max-width: 374px) {
 	.contactContainer {
-		grid-template-columns: 1fr; /* Stacks columns vertically */
-		gap: 20px;
-		width: 600px;
+		display: inline;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.contactText {
-		margin-bottom: 30px;
+		width: 80%;
+		margin: 0 auto; /* Center the content horizontally */
+		padding: 0 15px;
 	}
 
 	.contactContainer h1 {
-		font-size: 50px;
+		font-size: 25px;
+		width: 100%;
+		margin-top: 25px; /* Ensure the title takes up the full width */
 	}
 
 	.contactContainer p {
-		font-size: 35px;
-		width: 900px;
+		font-size: 15px;
+		width: 100%;
 	}
 
 	.button {
-		font-size: 35px;
+		font-size: 20px;
+	}
+	.formContainer {
+		width: 100%;
+		max-width: 240px;
+		height: auto;
+		margin-left: 20px;
+		margin-bottom: 10px;
 	}
 
-	.formContainer {
-		max-width: 1200px;
-		margin-top: 70px;
+	.submit {
+		margin: 10px 40px;
+		font-size: 20px;
+		padding: 18px 30px;
 	}
 }
 
