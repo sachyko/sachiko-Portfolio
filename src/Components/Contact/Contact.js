@@ -42,7 +42,7 @@ const Contact = () => {
 		emailjs
 			.send(
 				"service_5ya3ibd", //service Id
-				"template_9j35g0p", //template Id
+				"template_39a9qpa", //template Id
 				templateParams, //the form data
 				"8hUOtcEaVhJATgjd-" //public user Id
 			)
