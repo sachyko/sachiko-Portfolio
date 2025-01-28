@@ -37,3 +37,89 @@
 	color: #3d0a05;
 	margin-top: 0;
 }
+
+@media (min-width: 320px) and (max-width: 374px) {
+	.skills {
+		width: 1279px;
+	}
+
+	.skills h1 {
+		font-size: 35px;
+	}
+
+	.skill {
+		padding-left: 30px;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+	.skills {
+		width: 810px;
+	}
+
+	.skills h1 {
+		font-size: 35px;
+	}
+
+	.skill img {
+		width: 120px;
+		height: auto;
+	}
+	.skill {
+		padding-left: 30px;
+	}
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+	.skills {
+		width: 832px;
+	}
+
+	.skills h1 {
+		font-size: 35px;
+	}
+
+	.skill img {
+		width: 130px;
+		height: auto;
+	}
+	.skill {
+		padding-left: 30px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.skills {
+		width: 1005px;
+	}
+
+	.skills h1 {
+		font-size: 40px;
+	}
+
+	.skill img {
+		width: 155px;
+		height: auto;
+	}
+	.skill {
+		padding-left: 30px;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+	.skills {
+		width: 1132px;
+	}
+
+	.skills h1 {
+		font-size: 45px;
+	}
+
+	.skill img {
+		width: 185px;
+		height: auto;
+	}
+	.skill {
+		padding-left: 30px;
+	}
+}

@@ -48,3 +48,209 @@
 	font-size: 20px;
 	font-family: "Lora", serif;
 }
+
+@media (min-width: 320px) and (max-width: 374px) {
+	.aboutme {
+		display: flex;
+		justify-content: flex-end; /* Aligns the entire .aboutmeInfo container to the right */
+		align-items: flex-start;
+		padding-right: 100px;
+		position: relative;
+		padding: 0 80px 0 80px;
+		width: 1100px;
+	}
+
+	.aboutmeInfo {
+		display: flex;
+		flex-direction: column;
+		width: 200px;
+		padding-left: 10px;
+		width: 600px;
+	}
+	.aboutmeInfo h1 {
+		font-size: 50px;
+		text-align: center;
+	}
+
+	.aboutmeInfo h2 {
+		font-size: 35px;
+		text-align: justify;
+	}
+
+	.aboutmeInfo p {
+		font-size: 25px;
+		text-align: justify;
+	}
+	.aboutme img {
+		width: 550px; /* Reduce image size */
+		height: auto;
+		padding: 5px; /* Adjust padding for smaller screens */
+		margin: 60px 30px; /* Adjust margins for spacing */
+		position: relative; /* Reset positioning for smaller screens */
+		bottom: 0;
+		left: 0;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+	.aboutme {
+		display: flex;
+		justify-content: flex-end; /* Aligns the entire .aboutmeInfo container to the right */
+		align-items: flex-start;
+		padding-right: 100px;
+		position: relative;
+		padding: 0 80px 0 80px;
+		width: 650px;
+	}
+
+	.aboutmeInfo {
+		display: flex;
+		flex-direction: column;
+		padding-left: 5px;
+	}
+	.aboutmeInfo h1 {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.aboutmeInfo h2 {
+		font-size: 20px;
+		text-align: justify;
+	}
+
+	.aboutmeInfo p {
+		font-size: 15px;
+		text-align: justify;
+	}
+	.aboutme img {
+		width: 350px; /* Reduce image size */
+		height: auto;
+		padding: 5px; /* Adjust padding for smaller screens */
+		margin: 30px 13px; /* Adjust margins for spacing */
+		position: relative; /* Reset positioning for smaller screens */
+		bottom: 0;
+		left: 0;
+	}
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+	.aboutme {
+		display: flex;
+		justify-content: flex-end; /* Aligns the entire .aboutmeInfo container to the right */
+		align-items: flex-start;
+		padding-right: 100px;
+		position: relative;
+		padding: 0 80px 0 80px;
+		width: 650px;
+	}
+
+	.aboutmeInfo {
+		display: flex;
+		flex-direction: column;
+		padding-left: 5px;
+	}
+	.aboutmeInfo h1 {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.aboutmeInfo h2 {
+		font-size: 20px;
+		text-align: justify;
+	}
+
+	.aboutmeInfo p {
+		font-size: 15px;
+		text-align: justify;
+	}
+	.aboutme img {
+		width: 350px; /* Reduce image size */
+		height: auto;
+		padding: 5px; /* Adjust padding for smaller screens */
+		margin: 30px 13px; /* Adjust margins for spacing */
+		position: relative; /* Reset positioning for smaller screens */
+		bottom: 0;
+		left: 0;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.aboutme {
+		display: flex;
+		justify-content: flex-end; /* Aligns the entire .aboutmeInfo container to the right */
+		align-items: flex-start;
+		position: relative;
+		padding: 0 140px 0 190px;
+		width: 650px;
+	}
+
+	.aboutmeInfo {
+		display: flex;
+		flex-direction: column;
+		padding-left: 5px;
+	}
+	.aboutmeInfo h1 {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.aboutmeInfo h2 {
+		font-size: 20px;
+		text-align: justify;
+	}
+
+	.aboutmeInfo p {
+		font-size: 15px;
+		text-align: justify;
+	}
+	.aboutme img {
+		width: 350px; /* Reduce image size */
+		height: auto;
+		padding: 5px; /* Adjust padding for smaller screens */
+		margin: 30px 10px; /* Adjust margins for spacing */
+		position: relative; /* Reset positioning for smaller screens */
+		bottom: 0;
+		left: 0;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1043px) {
+	.aboutme {
+		display: flex;
+		justify-content: flex-end; /* Aligns the entire .aboutmeInfo container to the right */
+		align-items: flex-start;
+		padding-right: 100px;
+		position: relative;
+		padding: 0 80px 0 260px;
+		width: 650px;
+	}
+
+	.aboutmeInfo {
+		display: flex;
+		flex-direction: column;
+		padding-left: 5px;
+	}
+	.aboutmeInfo h1 {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.aboutmeInfo h2 {
+		font-size: 20px;
+		text-align: justify;
+	}
+
+	.aboutmeInfo p {
+		font-size: 15px;
+		text-align: justify;
+	}
+	.aboutme img {
+		width: 350px; /* Reduce image size */
+		height: auto;
+		padding: 5px; /* Adjust padding for smaller screens */
+		margin: 30px 13px; /* Adjust margins for spacing */
+		position: relative; /* Reset positioning for smaller screens */
+		bottom: 0;
+		left: 0;
+	}
+}

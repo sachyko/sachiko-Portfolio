@@ -68,7 +68,7 @@
 .media {
 	margin: 0 170px;
 }
-
+/* 
 .footer2 p {
 	font-family: "Lora", serif;
 }
@@ -104,7 +104,7 @@
 .links a:active,
 .media a:active {
 	color: #3d0a05;
-}
+} */
 
 /* .cursor {
 	display: inline-block;
@@ -123,3 +123,134 @@
 		opacity: 0;
 	}
 } */
+
+@media (min-width: 320px) and (max-width: 374px) {
+	.footerContainer {
+		width: 1265px;
+	}
+
+	.footer1 h1 {
+		font-size: 30px;
+	}
+	.footer1 p {
+		font-size: 18px;
+		width: 400px;
+		margin: 5px 40px;
+	}
+
+	.button {
+		font-size: 42px; /* Reduce font size for smaller screens */
+		padding: 12px; /* Adjust button padding */
+		margin: 20px auto; /* Center the button */
+	}
+
+	.text {
+		margin: 40px 0;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+	.footerContainer {
+		width: 800px;
+	}
+
+	.footer1 h1 {
+		font-size: 25px;
+		width: 200px;
+	}
+	.footer1 p {
+		font-size: 15px;
+		width: 300px;
+		margin: 5px 40px;
+	}
+
+	.button {
+		font-size: 20px; /* Reduce font size for smaller screens */
+		padding: 12px; /* Adjust button padding */
+		margin: 20px auto; /* Center the button */
+	}
+
+	.text {
+		margin: 40px 0;
+	}
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+	.footerContainer {
+		width: 824px;
+	}
+
+	.footer1 h1 {
+		font-size: 25px;
+		width: 200px;
+	}
+	.footer1 p {
+		font-size: 15px;
+		width: 300px;
+		margin: 5px 40px;
+	}
+
+	.button {
+		font-size: 22px; /* Reduce font size for smaller screens */
+		padding: 12px; /* Adjust button padding */
+		margin: 20px auto; /* Center the button */
+	}
+
+	.text {
+		margin: 40px 0;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.footerContainer {
+		width: 999px;
+	}
+
+	.footer1 h1 {
+		font-size: 35px;
+		width: 200px;
+		margin: 0 30px;
+	}
+	.footer1 p {
+		font-size: 16px;
+		width: 300px;
+		margin: 5px 50px;
+	}
+
+	.button {
+		font-size: 40px; /* Reduce font size for smaller screens */
+		padding: 12px; /* Adjust button padding */
+		margin: 20px auto; /* Center the button */
+	}
+
+	.text {
+		margin: 40px 0;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+	.footerContainer {
+		width: 1120px;
+	}
+
+	.footer1 h1 {
+		font-size: 35px;
+		width: 200px;
+		margin: 0 55px;
+	}
+	.footer1 p {
+		font-size: 16px;
+		width: 300px;
+		margin: 5px 50px;
+	}
+
+	.button {
+		font-size: 40px; /* Reduce font size for smaller screens */
+		padding: 12px; /* Adjust button padding */
+		margin: 20px auto; /* Center the button */
+	}
+
+	.text {
+		margin: 40px 0;
+	}
+}

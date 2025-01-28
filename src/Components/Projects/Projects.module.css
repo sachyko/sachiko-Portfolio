@@ -78,3 +78,14 @@ h2 {
 .button:active {
 	background-color: rgba(183, 133, 136, 0.46);
 }
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+	.projectsContainer {
+		/* padding: 6px; */
+		height: 580px;
+		margin: 10px;
+	}
+	.projectsContainer img {
+		margin-top: 5px;
+	}
+}
