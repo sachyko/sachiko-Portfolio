@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sachiko-Portfolio/static/css/main.fb1b3db1.css",
-    "main.js": "/sachiko-Portfolio/static/js/main.1628a179.js",
+    "main.css": "/sachiko-Portfolio/static/css/main.757e50da.css",
+    "main.js": "/sachiko-Portfolio/static/js/main.40f38fa5.js",
     "static/js/488.ad91f53a.chunk.js": "/sachiko-Portfolio/static/js/488.ad91f53a.chunk.js",
     "static/media/ravenous.jpg": "/sachiko-Portfolio/static/media/ravenous.d68d3f95b019d4854826.jpg",
     "static/media/sachiko.jpg": "/sachiko-Portfolio/static/media/sachiko.35e3bea5a9a9b9fc33d7.jpg",
@@ -13,12 +13,12 @@
     "static/media/html.jpg": "/sachiko-Portfolio/static/media/html.33d0aeb35ae8fa2d2d9c.jpg",
     "static/media/git.jpg": "/sachiko-Portfolio/static/media/git.9d5675769bc0b5a7deb5.jpg",
     "index.html": "/sachiko-Portfolio/index.html",
-    "main.fb1b3db1.css.map": "/sachiko-Portfolio/static/css/main.fb1b3db1.css.map",
-    "main.1628a179.js.map": "/sachiko-Portfolio/static/js/main.1628a179.js.map",
+    "main.757e50da.css.map": "/sachiko-Portfolio/static/css/main.757e50da.css.map",
+    "main.40f38fa5.js.map": "/sachiko-Portfolio/static/js/main.40f38fa5.js.map",
     "488.ad91f53a.chunk.js.map": "/sachiko-Portfolio/static/js/488.ad91f53a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb1b3db1.css",
-    "static/js/main.1628a179.js"
+    "static/css/main.757e50da.css",
+    "static/js/main.40f38fa5.js"
   ]
 }
