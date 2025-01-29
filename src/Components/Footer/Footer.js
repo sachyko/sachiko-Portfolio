@@ -28,26 +28,9 @@ const Footer = () => {
 	const footerRef = useRef(null);
 	const [isInView, setIsInView] = useState(false);
 
-	// Check scroll position to trigger typing
-	const checkIfInView = () => {
-		if (footerRef.current) {
-			const footerPosition = footerRef.current.getBoundingClientRect().top;
-			const screenHeight = window.innerHeight;
-
-			// Trigger when footer is in view (you can adjust this threshold)
-			if (footerPosition <= screenHeight * 0.75) {
-				setIsInView(true);
-			}
-		}
-	};
-
+	// Trigger typing effect immediately on page load
 	useEffect(() => {
-		// Add scroll event listener to check visibility
-		window.addEventListener("scroll", checkIfInView);
-		// Cleanup the event listener on component unmount
-		return () => {
-			window.removeEventListener("scroll", checkIfInView);
-		};
+		setIsInView(true); // Trigger typing effect when the page loads
 	}, []);
 	return (
 		<div className={styles.footerContainer} ref={footerRef}>

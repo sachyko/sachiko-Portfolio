@@ -5,22 +5,23 @@
 	flex-wrap: wrap;
 	max-width: 100vw;
 	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .navLinks {
 	list-style-type: none;
 	margin: 0;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+
 	color: #dac1b1;
-	gap: 30px;
+	width: 100%;
 }
 
 .navLinks li {
-	padding: 0 90px;
-	margin: 0 30px;
 	text-align: center;
+	padding: 0 90px;
 }
 
 .navLinks a {
@@ -41,16 +42,82 @@
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
-	.navlinks {
-		gap: 0;
+	.navLinks li {
+		padding: 0 11px 0 0;
+		margin: 0 5px 0 0;
 	}
 
+	.navLinks a {
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+	.navLinks {
+		flex-direction: row;
+	}
 	.navLinks li {
-		padding: 0 3px 0 0;
-		margin: 0 2px 0 0;
+		padding: 0 10px 0 0;
+		margin: 0 5px 0 0;
 	}
 
 	.navLinks a {
 		font-size: 15px;
+	}
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+	.navLinks {
+		flex-direction: row;
+	}
+	.navLinks li {
+		padding: 0 10px 0 0;
+		margin: 5px 5px 0 0;
+	}
+
+	.navLinks a {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.navLinks {
+		flex-direction: row;
+	}
+	.navLinks li {
+		padding: 5px 30px 0 0;
+		margin: 5px 5px 0 0;
+	}
+
+	.navLinks a {
+		font-size: 29px;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+	.navLinks {
+		flex-direction: row;
+	}
+	.navLinks li {
+		padding: 5px 80px 0 0;
+		margin: 5px 5px 0 0;
+	}
+
+	.navLinks a {
+		font-size: 32px;
+	}
+}
+
+@media (min-width: 2560px) {
+	.navLinks {
+		flex-direction: row;
+	}
+	.navLinks li {
+		padding: 5px 220px 0 0px;
+		margin: 5px 5px 0 0;
+	}
+
+	.navLinks a {
+		font-size: 60px;
 	}
 }

@@ -3,7 +3,7 @@
 	align-items: center;
 	justify-content: center;
 	background-color: #3d0a05;
-	max-width: 100vw;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -40,21 +40,68 @@
 		padding-right: 0;
 	}
 }
-/*
-@media (min-width: 375px) and (max-width: 424px) {
+@media (min-width: 320px) and (max-width: 374px) {
 	.header {
-		width: 806px;
+		overflow: hidden; /* Subtract scrollbar width */
+	}
+	.header img {
+		width: 110px;
+		padding-left: 5px;
+	}
+
+	.header h2 {
+		font-size: 26px;
+		word-spacing: 0;
+		margin-top: 10px;
+		padding-left: 25px;
+		padding-right: 0;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+	.header img {
+		width: 140px;
+		padding-left: 10px;
+		padding-right: 9px;
+	}
+
+	.header h2 {
+		font-size: 28px;
+		word-spacing: 0;
+		margin-top: 10px;
+		padding-left: 25px;
+		padding-right: 0;
 	}
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
-	.header {
-		width: 829px;
+	.header img {
+		width: 150px;
+		padding-left: 10px;
+		padding-right: 15px;
+	}
+
+	.header h2 {
+		font-size: 33px;
+		word-spacing: 0;
+		margin-top: 10px;
+		padding-left: 25px;
+		padding-right: 0;
 	}
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-	.header {
-		width: 1070px;
+@media (min-width: 2560px) {
+	.header img {
+		width: 650px;
+		padding-left: 390px;
+		padding-right: 15px;
 	}
-} */
+
+	.header h2 {
+		font-size: 120px;
+		word-spacing: 0;
+		margin-top: 10px;
+		padding-left: 185px;
+		padding-right: 0;
+	}
+}

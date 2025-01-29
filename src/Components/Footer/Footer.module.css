@@ -10,7 +10,7 @@
 	margin: 50px 5px;
 	justify-content: center;
 	align-items: center;
-	padding: 5px 40px;
+	padding: 5px 10px 5px 10px;
 }
 
 .footer1 h1 {
@@ -20,6 +20,7 @@
 	color: #dac1b1;
 	margin: 5px;
 	width: 400px;
+	padding-right: 90px;
 }
 
 .footer1 p {
@@ -29,6 +30,7 @@
 	font-weight: 900;
 	width: 400px;
 	text-align: justify;
+	padding-right: 90px;
 }
 
 .button {
@@ -55,18 +57,11 @@
 	transform: scale(0.98);
 	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
-.footer2 {
-	display: inline-flex;
-	width: 100%;
-	background-color: #7f1f0e;
-	color: #dac1b1;
-}
 
-.text {
-	margin: 10px 120px;
-}
-
-@media (min-width: 320px) and (max-width: 374px) {
+@media (min-width: 320px) and (max-width: 767px) {
+	.footerContainer {
+		padding: 25px;
+	}
 	.footer1 {
 		display: inline;
 		align-items: center;
@@ -84,62 +79,10 @@
 	}
 
 	.button {
-		font-size: 22px; /* Reduce font size for smaller screens */
-		padding: 12px; /* Adjust button padding */
-		margin: 30px 70px;
-		display: inline-block;
-	}
-
-	.text {
-		margin: 40px 0;
-	}
-}
-
-@media (min-width: 375px) and (max-width: 424px) {
-	.footerContainer {
-		width: 800px;
-	}
-
-	.footer1 h1 {
-		font-size: 25px;
-		width: 200px;
-	}
-	.footer1 p {
-		font-size: 15px;
-		width: 300px;
-		margin: 5px 40px;
-	}
-
-	.button {
 		font-size: 20px; /* Reduce font size for smaller screens */
-		padding: 12px; /* Adjust button padding */
-		margin: 20px auto; /* Center the button */
-	}
-
-	.text {
-		margin: 40px 0;
-	}
-}
-
-@media (min-width: 425px) and (max-width: 768px) {
-	.footerContainer {
-		width: 824px;
-	}
-
-	.footer1 h1 {
-		font-size: 25px;
-		width: 200px;
-	}
-	.footer1 p {
-		font-size: 15px;
-		width: 300px;
-		margin: 5px 40px;
-	}
-
-	.button {
-		font-size: 22px; /* Reduce font size for smaller screens */
-		padding: 12px; /* Adjust button padding */
-		margin: 20px auto; /* Center the button */
+		padding: 15px; /* Adjust button padding */
+		margin: 30px 33px;
+		display: inline-block;
 	}
 
 	.text {
@@ -149,24 +92,29 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
 	.footerContainer {
-		width: 999px;
+		padding: 25px;
 	}
-
+	.footer1 {
+		display: inline;
+		align-items: center;
+		justify-content: center;
+	}
 	.footer1 h1 {
-		font-size: 35px;
-		width: 200px;
-		margin: 0 30px;
+		font-size: 30px;
+		width: 100%;
+		margin-left: 30px;
 	}
 	.footer1 p {
-		font-size: 16px;
-		width: 300px;
-		margin: 5px 50px;
+		font-size: 17px;
+		width: 70%;
+		margin: 5px 40px;
 	}
 
 	.button {
-		font-size: 40px; /* Reduce font size for smaller screens */
-		padding: 12px; /* Adjust button padding */
-		margin: 20px auto; /* Center the button */
+		font-size: 20px; /* Reduce font size for smaller screens */
+		padding: 15px; /* Adjust button padding */
+		margin: 20px 33px;
+		display: inline-block;
 	}
 
 	.text {
@@ -174,29 +122,56 @@
 	}
 }
 
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 1024px) and (max-width: 1300px) {
 	.footerContainer {
-		width: 1120px;
+		padding: 25px;
 	}
-
+	.footer1 {
+		display: inline;
+		align-items: center;
+		justify-content: center;
+	}
 	.footer1 h1 {
-		font-size: 35px;
-		width: 200px;
-		margin: 0 55px;
+		font-size: 30px;
+		width: 100%;
+		margin-left: 30px;
 	}
 	.footer1 p {
-		font-size: 16px;
-		width: 300px;
-		margin: 5px 50px;
+		font-size: 17px;
+		width: 70%;
+		margin: 5px 40px;
 	}
 
 	.button {
-		font-size: 40px; /* Reduce font size for smaller screens */
-		padding: 12px; /* Adjust button padding */
-		margin: 20px auto; /* Center the button */
+		font-size: 20px; /* Reduce font size for smaller screens */
+		padding: 15px; /* Adjust button padding */
+		margin: 20px 33px;
+		display: inline-block;
 	}
 
 	.text {
 		margin: 40px 0;
+	}
+}
+@media (min-width: 2560px) {
+	.footer1 {
+		display: flex;
+		padding: 5px 10px 5px 100px;
+	}
+
+	.footer1 h1 {
+		margin: 5px;
+		padding-right: 120px;
+	}
+	.button {
+		font-size: 90px; /* Reduce font size for smaller screens */
+		padding: 35px; /* Adjust button padding */
+		margin: 20px 33px;
+	}
+
+	.footer1 p {
+		font-size: 40px;
+		width: 700px;
+		padding-right: 70px;
 	}
 }
