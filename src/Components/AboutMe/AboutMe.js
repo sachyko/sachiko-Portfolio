@@ -37,8 +37,8 @@ const AboutMe = () => {
 				>
 					I stumbled upon programming after talking with my bestfriend in
 					California. I started with drag and drop code lessons to try if this
-					was something I'ld like to pursure in the future. Little did I know, I
-					locked in myself from HTML, CSS, JavaScript and now learning React. I
+					was something I'd like to pursue in the future. Little did I know, I
+					immersed myself in HTML, CSS, JavaScript and now learning React. I
 					work as a lobby assistant throughout the day and study web development
 					at night. When I'm not coding, you’ll find me exploring Tokyo’s
 					vibrant streets, going to heels dance classes, or finding hidden
