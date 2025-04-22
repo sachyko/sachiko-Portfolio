@@ -23,7 +23,7 @@ const info = [
 		src: homepage,
 		name: "My Language Friends",
 		category: "A Club Homepage",
-		github: "https://github.com/sachyko/CompanyWebsite",
+		github: "https://github.com/sachyko/ClubWebsite",
 		projectLink: "https://sachyko.github.io/ClubWebsite/",
 		details:
 			"My Language Friends is a club homepage inspired by English Only Cafe. The first static website that I built to practice HTML and CSS. To improve my ability to style website I applied more custom colors and fonts, and lastly, style navigation elements like links and buttons.",
