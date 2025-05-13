@@ -3,29 +3,23 @@ import Projects from "../Projects/Projects";
 
 import styles from "./ProjectsList.module.css";
 
-// src: { ravenousImg },
-// 		name: "Ravenous",
-// 		category: "Restaurant Recommendation App",
-// 		projectLink: "https://sachyko.github.io/ravenous/",
-// 		details:
 const ProjectsList = ({ info }) => {
 	return (
-		<div className={styles.background}>
-			<div className={styles.projectsList}>
-				<h1 className={styles.title}>My Recent Works</h1>
-				<div className={styles.projectsListContainer}>
-					{info.map((info) => (
-						<Projects
-							key={info.name}
-							src={info.src}
-							name={info.name}
-							category={info.category}
-							projectLink={info.projectLink}
-							details={info.details}
-							github={info.github}
-						/>
-					))}
-				</div>
+		<div className={styles.projectListWrapper}>
+			<h1 className={styles.title}>My Recent Works</h1>
+			<div className={styles.projectsGrid}>
+				{info.map((project, index) => (
+					<Projects
+						key={project.name}
+						index={index}
+						src={project.src}
+						name={project.name}
+						category={project.category}
+						projectLink={project.projectLink}
+						details={project.details}
+						github={project.github}
+					/>
+				))}
 			</div>
 		</div>
 	);

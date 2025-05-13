@@ -1,18 +1,22 @@
+.contactWrapper {
+	margin: 0 auto;
+	padding: 30px 40px;
+}
 .contactContainer {
-	display: grid;
-	grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	gap: 30px;
 	flex-wrap: wrap;
-	margin: 70px;
-	background-color: #ac746c;
-	width: 100%;
-	margin: 20px auto;
-	padding: 10px 0;
 }
 
-.contactText {
-	padding: 0 0 0 240px;
+.contact img {
+	width: 85px;
+	border-radius: 40%;
 }
+/* .contactText {
+	display: flex;
+} */
 .contactContainer h1 {
 	font-family: "Playfair Display", serif;
 	font-size: 40px;
@@ -42,6 +46,37 @@
 	color: #dac1b1;
 }
 
+.social {
+	list-style: none;
+	color: #5c0f0b;
+	font-family: "Cormorant Garamond", serif;
+	font-weight: 900;
+	font-size: 20px;
+	padding-top: 13px;
+	padding-bottom: 30px;
+}
+
+.social i {
+	padding-right: 8px;
+}
+
+.social a,
+.social li {
+	text-decoration: none;
+	color: inherit;
+}
+
+.social a:hover,
+.social li:hover {
+	color: #3d0a05;
+	text-decoration: underline; /* Lighter color on hover for contrast */
+}
+
+.social a:active,
+.gmail li:active {
+	color: #751f0e; /* Change to white when active/clicked */
+	transform: scale(0.95); /* Slightly shrink to mimic a "pressed" effect */
+}
 /* form styles */
 .formContainer {
 	background-color: #751f0e;
@@ -88,7 +123,7 @@
 .formgroup textarea {
 	resize: none;
 	width: 100%;
-	height: 100%; /* Set a larger height for the textarea */
+	height: 100%;
 	line-height: 1.6;
 	font-size: 15px;
 	background: transparent;
@@ -105,7 +140,7 @@
 }
 
 .submit {
-	margin: 40px;
+	margin: 40px 10px;
 	background: linear-gradient(90deg, #7f1f0e, #ac746c);
 	border: none;
 	border-radius: 30px;
@@ -157,20 +192,25 @@
 	}
 
 	.button {
-		font-size: 20px;
+		font-size: 30px;
 	}
 	.formContainer {
 		width: 100%;
 		max-width: 240px;
 		height: auto;
-		margin-left: 20px;
+		margin-left: -20px;
 		margin-bottom: 10px;
+		margin-top: 20px;
 	}
 
 	.submit {
 		margin: 10px 40px;
 		font-size: 20px;
 		padding: 18px 30px;
+	}
+	.social {
+		font-size: 15px;
+		padding: 0;
 	}
 }
 
@@ -205,14 +245,19 @@
 		width: 100%;
 		max-width: 300px;
 		height: auto;
-		margin-left: 20px;
+		margin-left: -20px;
 		margin-bottom: 10px;
+		margin-top: 20px;
 	}
 
 	.submit {
 		margin: 10px 40px;
 		font-size: 20px;
 		padding: 18px 55px;
+	}
+	.social {
+		font-size: 15px;
+		padding: 0;
 	}
 }
 
@@ -247,14 +292,19 @@
 		width: 100%;
 		max-width: 350px;
 		height: auto;
-		margin-left: 20px;
+		margin-left: -20px;
 		margin-bottom: 10px;
+		margin-top: 20px;
 	}
 
 	.submit {
 		margin: 10px 40px;
 		font-size: 20px;
 		padding: 18px 75px;
+	}
+	.social {
+		font-size: 15px;
+		padding: 0;
 	}
 }
 
@@ -268,33 +318,33 @@
 	}
 
 	.formContainer {
-		max-width: 250px;
+		max-width: 750px;
 		height: auto;
 	}
 	.submit {
-		margin: 10px 40px;
+		margin: 20px 10px;
 		font-size: 20px;
 		padding: 18px 75px;
 	}
 }
 
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 1024px) and (max-width: 1039px) {
 	.contactContainer {
-		margin-top: 15px;
+		margin: 0;
 	}
 
 	.contactText {
-		padding: 0 0 0 80px;
+		padding: 0 0 0 32px;
 	}
 
 	.formContainer {
-		max-width: 432px;
+		max-width: 850px;
 		height: auto;
 	}
 	.submit {
-		margin: 15px 56px;
-		font-size: 30px;
-		padding: 18px 85px;
+		margin: 20px 10px;
+		font-size: 20px;
+		padding: 18px 75px;
 	}
 }
 
@@ -357,5 +407,12 @@
 		border: 2px solid #ac746c;
 		margin-top: 10px;
 		color: #dac1b1;
+	}
+
+	.socials {
+		font-size: 25px;
+	}
+	.social {
+		font-size: 45px;
 	}
 }

@@ -1,161 +1,222 @@
-.projectsContainer {
-	padding: 20px;
-	background-color: #ac746a;
+.card {
 	display: flex;
 	flex-direction: column;
-	max-width: 600px; /* Limit max width */
-	height: 650px;
-	transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+	padding: 2rem;
+	border-radius: 12px;
+	box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+	height: 100%;
+	min-height: 520px;
+	overflow: hidden;
 }
 
-.projectsContainer:hover {
-	transform: translateY(-5px); /* Moves the card up by 10px */
-	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow */
-}
-.projectsContainer img {
-	width: 100%;
-	height: auto;
-	object-fit: cover;
-	cursor: pointer;
-	transition: transform 0.3s ease, opacity 0.3s ease;
+.card:hover {
+	transform: translateY(-5px);
 }
 
-.projectsContainer img:hover {
-	transform: scale(1.05); /* Slightly scale up the image */
-	opacity: 0.8;
-}
-.info h1 {
-	font-size: 45px;
-	color: #7f1f0e;
-	font-weight: 800;
-	text-align: center;
-	font-family: "Playfair Display", serif;
-	flex: 1;
-}
-
-.info {
+.lightCard {
+	background-color: #e2d2bf;
 	color: #3d0a05;
-	display: flex; /* Use Flexbox */
-	flex-direction: column; /* Stack items vertically */
 }
 
-.info p {
+.darkCard {
+	background-color: #3d0a05;
+	color: #dac1b1;
+}
+
+.image {
+	width: 100%;
+	height: 280px;
+	object-fit: cover;
+	border-radius: 6px;
+	display: block;
+}
+
+.text {
 	font-family: "Lora", serif;
-	margin: 15px;
-	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	max-width: 100%;
+	padding-top: 10px;
+}
+
+.name {
+	font-family: "Playfair Display", serif;
+	font-size: 2rem;
+	margin: 0;
+	padding: 10px 0;
+}
+
+.category {
+	font-size: 1.1rem;
+	font-style: italic;
+	margin-top: 0.2rem;
+	margin-bottom: 1rem;
+	font-family: Cormorant Garamond, serif;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.details {
+	font-size: 1rem;
+	line-height: 1.6;
+	font-family: Lora, serif;
 	font-style: italic;
 }
 
-.info h2 {
-	font-family: "Cormorant Garamond", serif;
-	font-weight: 900;
-	font-size: 25px;
-}
-
-.info p,
-h2 {
-	text-align: justify;
-}
-
 .button {
-	text-decoration: none;
-	border-radius: 4px;
-	background-color: #7f1f0e;
+	display: inline-block;
+	margin-top: 1.5rem;
+	background-color: #7b2d2d;
 	color: #a58570;
-	padding: 8px;
-	cursor: pointer;
-	font-family: "Cormorant Garamond", serif;
-	font-size: 20px;
-	align-self: flex-end;
-}
-
-.button:hover {
-	background-color: #dac1b1;
-	color: #7f1f0e;
-}
-
-.button:active {
-	background-color: rgba(183, 133, 136, 0.46);
+	padding: 0.6rem 1rem;
+	border-radius: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: inherit;
+	width: max-content;
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
-	.projectsContainer {
-		width: 65%;
-		height: auto;
+	.card {
+		padding: 1rem;
+		min-height: auto;
+	}
+	.image {
+		height: 100px;
 	}
 
-	.projectsContainer img {
-		width: 100%;
-		height: auto;
-	}
-	.info {
-		width: 100%;
-	}
-	.info p {
-		font-size: 11px;
+	.text {
+		padding-top: 8px;
+		gap: 0.4rem;
 	}
 
-	.info h1 {
-		font-size: 20px;
+	.name {
+		font-size: 1rem;
+		padding: 8px 0;
 	}
 
-	.info h2 {
-		font-size: 17px;
+	.category {
+		font-size: 0.9rem;
+	}
+
+	.details {
+		font-size: 0.7rem;
+		line-height: 1.3;
+	}
+
+	.button {
+		font-size: 0.6rem;
+		padding: 0.5rem 0.8rem;
 	}
 }
 
-@media (min-width: 375px) and (max-width: 780px) {
-	.projectsContainer {
-		width: 70%;
-		height: 500px;
+@media (min-width: 375px) and (max-width: 767px) {
+	.card {
+		padding: 1rem;
+		min-height: auto;
+	}
+	.image {
+		height: 100px;
 	}
 
-	.projectsContainer img {
-		width: 100%;
-		height: auto;
-	}
-	.info {
-		width: 100%; /* Let the info take the full width of the container */
-	}
-	.info p {
-		font-size: 13px;
-		/* margin: 10px; */
+	.text {
+		padding-top: 8px;
+		gap: 0.4rem;
 	}
 
-	.info h1 {
-		font-size: 24px;
+	.name {
+		font-size: 1rem;
+		padding: 8px 0;
 	}
 
-	.info h2 {
-		font-size: 20px;
-		text-align: center;
+	.category {
+		font-size: 0.9rem;
+	}
+
+	.details {
+		font-size: 0.8rem;
+		line-height: 1.3;
+	}
+
+	.button {
+		font-size: 0.6rem;
+		padding: 0.5rem 0.8rem;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.card {
+		padding: 1rem;
+		min-height: auto;
+	}
+	.image {
+		height: 290px;
+	}
+
+	.text {
+		padding-top: 8px;
+		gap: 0.4rem;
+	}
+
+	.name {
+		padding: 8px 0;
+	}
+
+	.details {
+		line-height: 1.3;
+	}
+
+	.button {
+		padding: 0.5rem 0.8rem;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+	.card {
+		padding: 1rem;
+		min-height: auto;
+	}
+	.image {
+		height: 290px;
+	}
+
+	.text {
+		padding-top: 8px;
+		gap: 0.4rem;
+	}
+
+	.name {
+		padding: 8px 0;
+	}
+
+	.details {
+		line-height: 1.3;
+	}
+
+	.button {
+		padding: 0.5rem 0.8rem;
 	}
 }
 
 @media (min-width: 2560px) {
-	.projectsContainer {
-		padding: 20px;
-		background-color: #ac746a;
-		display: flex;
-		flex-direction: column;
-		max-width: 3000px; /* Limit max width */
-		height: 1650px;
-	}
-	.info p {
-		font-size: 55px;
+	.image {
+		height: 560px;
 	}
 
-	.info h1 {
-		font-size: 90px;
+	.name {
+		font-size: 5.5rem;
 	}
 
-	.info h2 {
-		font-size: 75px;
+	.category {
+		font-size: 4.5rem;
+	}
+
+	.details {
+		font-size: 3rem;
 	}
 	.button {
-		font-size: 80px;
-	}
-	.projects {
-		padding-bottom: 40px;
+		font-size: 3rem;
 	}
 }

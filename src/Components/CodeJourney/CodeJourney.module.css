@@ -1,0 +1,461 @@
+.CodeJourney {
+	margin: 0 auto;
+	padding: 0 40px;
+	display: flex;
+	width: 100%;
+	height: auto;
+	align-items: stretch;
+	margin-top: -1px;
+}
+
+.CodeJourneyText {
+	width: 50%;
+	background-color: #dac1b1;
+	padding: 60px 100px;
+}
+.sectionTitle {
+	font-family: "Cormorant Garamond", serif;
+	font-weight: 850;
+	color: #7f1f0e;
+	font-size: 4.5rem;
+	line-height: 0.9;
+}
+
+.sectionTitle span {
+	font-style: italic;
+}
+
+.CodeJourneyText h3 {
+	font-family: "Playfair Display", serif;
+	color: #3d0a05;
+	font-size: 1.4rem;
+}
+.CodeJourneyText p {
+	font-family: "Lora", serif;
+	text-align: justify;
+	color: #3d0a05;
+	font-size: 1rem;
+}
+
+/* skill Cards Section */
+.skillGrid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+}
+.skills {
+	background-color: #7f1f0e;
+	width: 50%;
+	box-sizing: border-box;
+	height: 100%;
+	padding: 0 65px 30px 30px;
+}
+.skills h2 {
+	font-family: "Playfair Display", serif;
+	font-size: 4rem;
+	color: #dac1b1;
+	text-align: center;
+}
+
+.skills p {
+	font-family: "Lora", serif;
+	font-size: 1.5rem;
+	color: #dac1b1;
+	text-transform: capitalize;
+}
+
+.skillCard img {
+	width: auto;
+	height: 120px;
+	border-radius: 25px;
+	padding: 18px;
+}
+
+.skillCard {
+	background-color: #ad3f25;
+	text-align: center;
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s ease;
+	width: 170px;
+}
+
+.skillCard:hover {
+	transform: translateY(-5px); /* Slight lift */
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+	.CodeJourney {
+		margin: 0 auto;
+		padding: 0 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.CodeJourneyText {
+		width: 87%;
+		padding: 20px 80px 20px 0;
+	}
+	.sectionTitle {
+		font-size: 23px;
+		line-height: 0.9;
+	}
+
+	.sectionTitle span {
+		font-style: italic;
+	}
+
+	.CodeJourneyText h3 {
+		font-size: 14px;
+	}
+	.CodeJourneyText p {
+		text-align: justify;
+		font-size: 12px;
+	}
+
+	/* skill Cards Section */
+	.skillGrid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+		padding-right: 40px;
+	}
+	.skills {
+		width: 290px;
+		height: auto;
+		padding: 0 65px 30px 16px;
+		margin-right: 75px;
+	}
+	.skills h2 {
+		font-size: 23px;
+		text-align: left;
+	}
+
+	.skills p {
+		font-size: 14px;
+		margin-top: 0;
+	}
+
+	.skillCard img {
+		width: auto;
+		height: 80px;
+		border-radius: 25px;
+		padding: 18px;
+	}
+
+	.skillCard {
+		text-align: center;
+		width: 120px;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+	.CodeJourney {
+		margin: 0 auto;
+		padding: 0 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.CodeJourneyText {
+		width: 87%;
+		padding: 20px 80px 20px 0;
+	}
+	.sectionTitle {
+		font-size: 23px;
+		line-height: 0.9;
+	}
+
+	.sectionTitle span {
+		font-style: italic;
+	}
+
+	.CodeJourneyText h3 {
+		font-size: 14px;
+	}
+	.CodeJourneyText p {
+		text-align: justify;
+		font-size: 12px;
+	}
+
+	/* skill Cards Section */
+	.skillGrid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
+	.skills {
+		width: 340px;
+		height: auto;
+		padding: 0 65px 30px 16px;
+		margin-right: 75px;
+	}
+	.skills h2 {
+		font-size: 23px;
+		text-align: left;
+	}
+
+	.skills p {
+		font-size: 14px;
+		margin-top: 0;
+	}
+
+	.skillCard img {
+		width: auto;
+		height: 80px;
+		border-radius: 25px;
+		padding: 18px;
+	}
+
+	.skillCard {
+		text-align: center;
+		width: 120px;
+		margin-left: 18px;
+	}
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+	.CodeJourney {
+		margin: 0 auto;
+		padding: 0 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.CodeJourneyText {
+		width: 87%;
+		padding: 20px 80px 20px 0;
+	}
+	.sectionTitle {
+		font-size: 25px;
+		line-height: 0.9;
+	}
+
+	.sectionTitle span {
+		font-style: italic;
+	}
+
+	.CodeJourneyText h3 {
+		font-size: 16px;
+	}
+	.CodeJourneyText p {
+		text-align: justify;
+		font-size: 13px;
+	}
+
+	/* skill Cards Section */
+	.skillGrid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
+	.skills {
+		width: 370px;
+		height: auto;
+		padding: 0 65px 30px 16px;
+		margin-right: 75px;
+	}
+	.skills h2 {
+		font-size: 25px;
+		text-align: left;
+	}
+
+	.skills p {
+		font-size: 16px;
+		margin-top: 0;
+	}
+
+	.skillCard img {
+		width: auto;
+		height: 90px;
+		border-radius: 25px;
+		padding: 13px;
+	}
+
+	.skillCard {
+		text-align: center;
+		width: 120px;
+		margin-left: 28px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.CodeJourney {
+		display: flex;
+		width: 100%;
+		height: auto;
+		align-items: stretch;
+	}
+
+	.CodeJourneyText {
+		width: 50%;
+		padding: 10px 0 60px 2px;
+		margin: 0 10px 0 -9px;
+	}
+
+	.sectionTitle {
+		font-size: 3.5rem;
+	}
+
+	.CodeJourneyText h3 {
+		font-size: 1.2rem;
+		width: 360px;
+	}
+	.CodeJourneyText p {
+		text-align: justify;
+		font-size: 1rem;
+		width: 360px;
+	}
+
+	/* skill Cards Section */
+	.skillGrid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
+	.skills {
+		width: 50%;
+		padding: 0 65px 30px 30px;
+	}
+	.skills h2 {
+		font-size: 2.2rem;
+		text-align: center;
+	}
+
+	.skills p {
+		font-size: 1.2rem;
+		margin-top: 0;
+	}
+
+	.skillCard img {
+		width: auto;
+		height: 95px;
+		border-radius: 25px;
+		padding: 18px;
+	}
+
+	.skillCard {
+		text-align: center;
+		width: 150px;
+		margin-left: -10px;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1043px) {
+	.CodeJourney {
+		display: flex;
+		width: 100%;
+		height: auto;
+		align-items: stretch;
+	}
+
+	.CodeJourneyText {
+		width: 50%;
+		padding: 10px 0 60px 2px;
+	}
+
+	.sectionTitle {
+		font-size: 4rem;
+	}
+
+	.CodeJourneyText h3 {
+		font-size: 1.7rem;
+		width: 490px;
+	}
+	.CodeJourneyText p {
+		text-align: justify;
+		font-size: 1.5rem;
+		width: 470px;
+	}
+
+	/* skill Cards Section */
+	.skillGrid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
+	.skills {
+		width: 50%;
+		padding: 0 65px 30px 30px;
+	}
+	.skills h2 {
+		font-size: 3rem;
+		text-align: center;
+	}
+
+	.skills p {
+		font-size: 1.3rem;
+		margin-top: 0;
+	}
+
+	.skillCard img {
+		width: auto;
+		height: 160px;
+		border-radius: 25px;
+		padding: 18px;
+	}
+
+	.skillCard {
+		text-align: center;
+		width: 200px;
+		/* margin-left: -10px; */
+	}
+}
+
+@media (min-width: 2056px) {
+	.CodeJourneyText {
+		width: 50%;
+		padding: 60px 100px;
+	}
+	.sectionTitle {
+		font-size: 8.5rem;
+		line-height: 0.9;
+	}
+
+	.sectionTitle span {
+		font-style: italic;
+	}
+
+	.CodeJourneyText h3 {
+		font-size: 2.6rem;
+	}
+	.CodeJourneyText p {
+		font-size: 2.4rem;
+	}
+
+	/* skill Cards Section */
+	.skillGrid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
+	}
+	.skills {
+		width: 50%;
+		height: 100%;
+		padding: 0 65px 30px 30px;
+	}
+	.skills h2 {
+		font-size: 8rem;
+	}
+
+	.skills p {
+		font-size: 3.5rem;
+	}
+
+	.skillCard img {
+		width: auto;
+		height: 300px;
+		border-radius: 25px;
+		padding: 18px;
+	}
+
+	.skillCard {
+		text-align: center;
+		width: 350px;
+	}
+}

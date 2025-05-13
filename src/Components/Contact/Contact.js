@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Navigation from "../Navigation/Navigation";
 import styles from "./Contact.module.css";
 import emailjs from "emailjs-com";
 
@@ -63,73 +64,113 @@ const Contact = () => {
 	};
 
 	return (
-		<div className={styles.contactContainer}>
-			<div className={styles.contactText}>
-				<h1>"Let's Connect, Collaborate, and Create Together!"</h1>
-				<p>
-					"I'm Sachiko Ponpon - an aspiring developer based in Tokyo, passionate
-					about creating meaningful digital experiences and bring innovative
-					ideas to life, while constantly learning and growing in the tech
-					world"
-				</p>
-				<p>
-					"Reach out today, and together, we’ll connect, collaborate, and create
-					something amazing."
-				</p>
-				<Link to="/" className={styles.button}>
-					Back to Home
-				</Link>
-			</div>
-
-			<div className={styles.formContainer}>
-				<h2>Contact Us</h2>
-				<form onSubmit={handleSubmit} className="contact-form">
-					{/* Error message */}
-					{error && <div className="error-message">{error}</div>}
-
-					{/* Name input */}
-					<div className={styles.formgroup}>
-						<label htmlFor="name">Name</label>
-						<input
-							type="text"
-							id="name"
-							name="name"
-							value={formData.name}
-							onChange={handleChange}
-							required
-						/>
+		<div className={styles.contactWrapper}>
+			<div className={styles.contactContainer}>
+				<div className={styles.contactText}>
+					<h1>"Let's Connect, Collaborate, and Create Together!"</h1>
+					<p>
+						"A front-end web developer with a keen eye for design, bringing
+						ideas to life through clean, responsive, and visually engaging
+						websites."
+					</p>
+					<p>
+						"Let's build something exceptional. Reach out anytime, I'll be in
+						touch soon."
+					</p>
+					<div className={styles.socialContainer}>
+						<ul className={styles.social}>
+							<li className={styles.gmail}>
+								<i
+									className="fa-sharp fa-solid fa-envelope"
+									style={{ color: "#ac746a " }}
+								></i>
+								ponponsachiko23@gmail.com
+							</li>
+							<li>
+								<i
+									className="fa-brands fa-github"
+									style={{ color: "#ac746a " }}
+								></i>
+								<a
+									href="https://github.com/sachyko"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Github
+								</a>
+							</li>
+							<li>
+								<i
+									className="fa-brands fa-linkedin"
+									style={{ color: "#ac746a " }}
+								></i>
+								<a
+									href="https://www.linkedin.com/in/sachiko-ponpon-1142791b7/"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Linkedin
+								</a>
+							</li>
+						</ul>
 					</div>
+					<Link to="/" className={styles.button}>
+						Back to Home
+					</Link>
+				</div>
 
-					{/* Email input */}
-					<div className={styles.formgroup}>
-						<label htmlFor="email">Email</label>
-						<input
-							type="email"
-							id="email"
-							name="email"
-							value={formData.email}
-							onChange={handleChange}
-							required
-						/>
-					</div>
+				<div className={styles.formContainer}>
+					<h2>Contact Us</h2>
+					<form onSubmit={handleSubmit} className="contact-form">
+						{/* Error message */}
+						{error && <div className="error-message">{error}</div>}
 
-					{/* Message input */}
-					<div className={styles.formgroup}>
-						<label htmlFor="message">Message</label>
-						<textarea
-							id="message"
-							name="message"
-							value={formData.message}
-							onChange={handleChange}
-							required
-						></textarea>
-					</div>
+						{/* Name input */}
+						<div className={styles.formgroup}>
+							<label htmlFor="name">Name</label>
+							<input
+								type="text"
+								id="name"
+								name="name"
+								value={formData.name}
+								onChange={handleChange}
+								required
+								autoComplete="name"
+							/>
+						</div>
 
-					{/* Submit Button */}
-					<button type="submit" className={styles.submit}>
-						Submit Now
-					</button>
-				</form>
+						{/* Email input */}
+						<div className={styles.formgroup}>
+							<label htmlFor="email">Email</label>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								value={formData.email}
+								onChange={handleChange}
+								required
+								autoComplete="email"
+							/>
+						</div>
+
+						{/* Message input */}
+						<div className={styles.formgroup}>
+							<label htmlFor="message">Message</label>
+							<textarea
+								id="message"
+								name="message"
+								value={formData.message}
+								onChange={handleChange}
+								required
+							></textarea>
+						</div>
+
+						{/* Submit Button */}
+						<button type="submit" className={styles.submit}>
+							Submit Now
+						</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	);
