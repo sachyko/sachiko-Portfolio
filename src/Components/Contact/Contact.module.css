@@ -192,7 +192,7 @@
 	}
 
 	.button {
-		font-size: 30px;
+		font-size: 20px;
 	}
 	.formContainer {
 		width: 100%;
@@ -209,7 +209,7 @@
 		padding: 18px 30px;
 	}
 	.social {
-		font-size: 15px;
+		font-size: 14px;
 		padding: 0;
 	}
 }
