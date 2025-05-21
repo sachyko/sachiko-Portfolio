@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import html from "./pictures/html.jpg";
 import css from "./pictures/css.jpg";
 import javascript from "./pictures/javascript.jpg";
-import git from "./pictures/javascript.jpg";
+import git from "./pictures/git.jpg";
 import react from "./pictures/react.jpg";
 import figma from "./pictures/figma.jpg";
 
