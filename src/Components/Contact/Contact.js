@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Navigation from "../Navigation/Navigation";
+// import Navigation from "../Navigation/Navigation";
 import styles from "./Contact.module.css";
 import emailjs from "emailjs-com";
 
