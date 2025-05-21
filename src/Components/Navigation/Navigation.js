@@ -1,10 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+
 import logo from "../Hero/picture/logo.png";
 
 import styles from "./Navigation.module.css";
 
 const Navigation = () => {
+	const location = useLocation();
+	const isContactPage = location.pathname === "/contact";
 	return (
 		<div className={styles.navbarContainer}>
 			<div className={styles.navbar}>
@@ -27,11 +30,13 @@ const Navigation = () => {
 							</li>
 						</ul>
 					</div>
-					<div className={styles.buttonWrapper}>
-						<Link to="/contact" className={styles.button}>
-							Get In Touch
-						</Link>
-					</div>
+					{!isContactPage && (
+						<div className={styles.buttonWrapper}>
+							<Link to="/contact" className={styles.button}>
+								Get In Touch
+							</Link>
+						</div>
+					)}
 				</nav>
 			</div>
 		</div>
