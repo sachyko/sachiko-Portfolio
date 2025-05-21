@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sachiko-Portfolio/static/css/main.643108cd.css",
+    "main.css": "/sachiko-Portfolio/static/css/main.f7357b9f.css",
     "main.js": "/sachiko-Portfolio/static/js/main.807abd88.js",
     "static/js/488.ad91f53a.chunk.js": "/sachiko-Portfolio/static/js/488.ad91f53a.chunk.js",
     "static/media/Sachiko2.jpg": "/sachiko-Portfolio/static/media/Sachiko2.e5e2d1c508c07d5fbd39.jpg",
@@ -13,12 +13,12 @@
     "static/media/html.jpg": "/sachiko-Portfolio/static/media/html.33d0aeb35ae8fa2d2d9c.jpg",
     "static/media/figma.jpg": "/sachiko-Portfolio/static/media/figma.0a91887de39a936df98a.jpg",
     "index.html": "/sachiko-Portfolio/index.html",
-    "main.643108cd.css.map": "/sachiko-Portfolio/static/css/main.643108cd.css.map",
+    "main.f7357b9f.css.map": "/sachiko-Portfolio/static/css/main.f7357b9f.css.map",
     "main.807abd88.js.map": "/sachiko-Portfolio/static/js/main.807abd88.js.map",
     "488.ad91f53a.chunk.js.map": "/sachiko-Portfolio/static/js/488.ad91f53a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.643108cd.css",
+    "static/css/main.f7357b9f.css",
     "static/js/main.807abd88.js"
   ]
 }
