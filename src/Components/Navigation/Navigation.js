@@ -30,13 +30,12 @@ const Navigation = () => {
 							</li>
 						</ul>
 					</div>
-					{!isContactPage && (
-						<div className={styles.buttonWrapper}>
-							<Link to="/contact" className={styles.button}>
-								Get In Touch
-							</Link>
-						</div>
-					)}
+
+					<div className={styles.buttonWrapper}>
+						<Link to="/contact" className={styles.button}>
+							Get In Touch
+						</Link>
+					</div>
 				</nav>
 			</div>
 		</div>
