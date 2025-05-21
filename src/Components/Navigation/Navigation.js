@@ -31,11 +31,11 @@ const Navigation = () => {
 						</ul>
 					</div>
 
-					<div className={styles.buttonWrapper}>
+					{/* <div className={styles.buttonWrapper}>
 						<Link to="/contact" className={styles.button}>
 							Get In Touch
 						</Link>
-					</div>
+					</div> */}
 				</nav>
 			</div>
 		</div>

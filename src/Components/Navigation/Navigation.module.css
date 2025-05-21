@@ -6,6 +6,9 @@
 
 .navbar {
 	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .navbar img {
@@ -17,16 +20,17 @@
 .borderlineWrapper {
 	border: 1px solid #dac1b1;
 	border-radius: 50px;
-	width: 55%;
-	position: relative;
-	left: 250px;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 .navLinks {
 	list-style: none;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
+	padding-right: 65px;
+	padding-left: 77px;
 }
 .navLinks a {
 	text-decoration: none;
@@ -52,260 +56,140 @@
 	transform: scale(0.95); /* Slightly shrink to mimic a "pressed" effect */
 }
 
-.button {
-	background: linear-gradient(90deg, #5c0f0b, #8b2a1d);
-	border: none;
-	border-radius: 30px;
-	cursor: pointer;
-	box-shadow: 0px 4px 6px rgba(140, 30, 30, 0.3);
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
-	font-family: "Cormorant Garamond", serif;
-	color: #dac1b1;
-	font-size: 15px;
-	padding: 12px 39px;
-	text-decoration: none;
-	float: right;
-}
-
-.buttonWrapper {
-	position: relative;
-	padding-left: 1000px;
-	margin-top: -50px;
-	z-index: 10;
-}
-
-.button:hover {
-	transform: scale(1.05);
-	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-}
-
 @media (min-width: 320px) and (max-width: 374px) {
 	.navbarContainer {
 		padding: 20px 0;
+		margin-left: 0;
+		display: flex;
+		justify-content: center;
+	}
+	.navbar {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.navbar img {
-		height: 45px;
+		height: 65px;
 		width: auto;
-		border-radius: 40%;
+		padding-right: 15px;
 	}
 	.borderlineWrapper {
-		position: relative;
-		left: 5px;
-		width: 200px;
-		height: 185px;
-		margin-bottom: 90px;
+		border-radius: 50px;
+		width: 100%;
+		margin-top: 13px;
+		margin-bottom: 5px;
 	}
-
 	.navLinks {
 		list-style: none;
-		display: flex;
-		flex-direction: column;
-		padding-right: 14px;
+		padding-left: 14px;
+		padding-right: 0;
 	}
 	.navLinks a {
-		font-size: 17px;
-		line-height: 1.8rem;
-	}
-
-	.button {
-		border-radius: 30px;
-		font-size: 13px;
-		padding: 12px 20px;
-		float: right;
-	}
-
-	.buttonWrapper {
-		padding: 0 20px;
-		margin-top: -140px;
-		margin-right: 18px;
-		z-index: 10;
+		font-size: 12px;
 	}
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
 	.navbarContainer {
 		padding: 20px 0;
+		margin-left: 0;
+		display: flex;
+		justify-content: center;
 	}
-
-	.headerContainer {
-		padding: 25px 25px;
+	.navbar {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.navbar img {
-		height: 60px;
+		height: 65px;
 		width: auto;
-		border-radius: 40%;
+		padding-right: 15px;
 	}
 	.borderlineWrapper {
-		position: relative;
-		left: 25px;
-		width: 200px;
-		height: 185px;
-		margin-bottom: 90px;
+		border-radius: 50px;
+		width: 100%;
+		margin-top: 13px;
+		margin-bottom: 5px;
 	}
-
 	.navLinks {
 		list-style: none;
-		display: flex;
-		flex-direction: column;
-		padding-right: 14px;
+		padding-left: 16px;
+		padding-right: 0;
 	}
 	.navLinks a {
-		font-size: 17px;
-		line-height: 1.8rem;
-	}
-
-	.button {
-		border-radius: 30px;
-		font-size: 13px;
-		padding: 12px 20px;
-		float: right;
-	}
-
-	.buttonWrapper {
-		padding: 0 20px;
-		margin-top: -140px;
-		margin-bottom: 20px;
-		z-index: 10;
+		font-size: 14px;
 	}
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
 	.navbarContainer {
 		padding: 20px 0;
+		margin-left: 0;
+		display: flex;
+		justify-content: center;
 	}
-
-	.headerContainer {
-		padding: 25px 25px;
+	.navbar {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.navbar img {
-		height: 60px;
+		height: 65px;
 		width: auto;
-		border-radius: 40%;
+		padding-right: 15px;
 	}
 	.borderlineWrapper {
-		position: relative;
-		left: 25px;
-		width: 200px;
-		height: 185px;
-		margin-bottom: 90px;
+		border-radius: 50px;
+		width: 100%;
+		margin-top: 13px;
+		margin-bottom: 5px;
 	}
-
 	.navLinks {
 		list-style: none;
-		display: flex;
-		flex-direction: column;
-		padding-right: 14px;
+		padding-left: 18px;
+		padding-right: 0;
 	}
 	.navLinks a {
-		font-size: 17px;
-		line-height: 1.8rem;
-	}
-
-	.button {
-		border-radius: 30px;
-		font-size: 13px;
-		padding: 12px 20px;
-		float: right;
-	}
-
-	.buttonWrapper {
-		padding: 0 20px;
-		margin-top: -140px;
-		margin-bottom: 20px;
-		z-index: 10;
+		font-size: 16px;
 	}
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-	.navbarContainer {
-		padding: 20px 0;
-	}
-
-	.navbar {
-		display: flex;
-	}
 	.navbar img {
 		width: 75px;
 		border-radius: 40%;
 	}
-	.borderlineWrapper {
-		width: 400px;
-		position: relative;
-		left: 42px;
-		top: 13px;
-	}
 
 	.navLinks a {
 		font-size: 17px;
-		padding-right: 20px;
-	}
-
-	.navLinks li {
-		text-decoration: none;
-	}
-
-	.button {
-		font-size: 15px;
-		padding: 12px 20px;
-	}
-
-	.buttonWrapper {
-		padding-left: 500px;
-		margin-top: -35px;
+		padding-right: 14px;
 	}
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
-	.navbarContainer {
-		background-color: #3d0a05;
-		margin: 0 auto;
-		padding: 20px 10px;
-	}
 	.navbar img {
 		width: 80px;
 		border-radius: 40%;
-	}
-	.borderlineWrapper {
-		width: 600px;
-		position: relative;
-		left: 50px;
-		top: 13px;
 	}
 
 	.navLinks a {
 		font-size: 25px;
 		padding-right: 20px;
 	}
-
-	.navLinks li {
-		text-decoration: none;
-	}
-
-	.button {
-		font-size: 20px;
-		padding: 12px 23px;
-	}
-
-	.buttonWrapper {
-		padding-left: 700px;
-		margin-top: -40px;
-	}
 }
 
 @media (min-width: 2560px) {
+	.navbarContainer {
+		padding: 30px 40px;
+	}
+
 	.navbar img {
 		width: 220px;
 		border-radius: 40%;
-	}
-	.borderlineWrapper {
-		border-radius: 50px;
-		width: 1500px;
-		position: relative;
-		left: 240px;
-		top: 55px;
 	}
 
 	.navLinks a {
@@ -313,15 +197,10 @@
 		font-size: 64px;
 		padding-right: 100px;
 	}
-
-	.button {
-		font-size: 40px;
-		padding: 25px 50px;
-		border-radius: 50px;
-	}
-
-	.buttonWrapper {
-		padding-left: 1890px;
-		margin-top: -40px;
+	.borderlineWrapper {
+		border: 2px solid #dac1b1;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-radius: 85px;
 	}
 }
