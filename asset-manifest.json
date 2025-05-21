@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sachiko-Portfolio/static/css/main.5c89cb8e.css",
-    "main.js": "/sachiko-Portfolio/static/js/main.807abd88.js",
+    "main.css": "/sachiko-Portfolio/static/css/main.6742d840.css",
+    "main.js": "/sachiko-Portfolio/static/js/main.c8fb6261.js",
     "static/js/488.ad91f53a.chunk.js": "/sachiko-Portfolio/static/js/488.ad91f53a.chunk.js",
     "static/media/Sachiko2.jpg": "/sachiko-Portfolio/static/media/Sachiko2.e5e2d1c508c07d5fbd39.jpg",
     "static/media/logo.png": "/sachiko-Portfolio/static/media/logo.2c0b22c065951fe4aa53.png",
@@ -13,12 +13,12 @@
     "static/media/html.jpg": "/sachiko-Portfolio/static/media/html.33d0aeb35ae8fa2d2d9c.jpg",
     "static/media/figma.jpg": "/sachiko-Portfolio/static/media/figma.0a91887de39a936df98a.jpg",
     "index.html": "/sachiko-Portfolio/index.html",
-    "main.5c89cb8e.css.map": "/sachiko-Portfolio/static/css/main.5c89cb8e.css.map",
-    "main.807abd88.js.map": "/sachiko-Portfolio/static/js/main.807abd88.js.map",
+    "main.6742d840.css.map": "/sachiko-Portfolio/static/css/main.6742d840.css.map",
+    "main.c8fb6261.js.map": "/sachiko-Portfolio/static/js/main.c8fb6261.js.map",
     "488.ad91f53a.chunk.js.map": "/sachiko-Portfolio/static/js/488.ad91f53a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c89cb8e.css",
-    "static/js/main.807abd88.js"
+    "static/css/main.6742d840.css",
+    "static/js/main.c8fb6261.js"
   ]
 }
