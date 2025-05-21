@@ -97,11 +97,11 @@
 	text-align: left;
 }
 
-.formgroup {
+.formGroup {
 	margin-bottom: 10px;
 }
 
-.formgroup label {
+.formGroup label {
 	padding-right: 10px;
 	color: #a58570;
 	font-family: "Lora", serif;
@@ -109,7 +109,7 @@
 	font-size: 15px;
 }
 
-.formgroup input {
+.formGroup input {
 	border: none;
 	background: transparent;
 	border-bottom: 2px solid #ac746c;
@@ -120,7 +120,7 @@
 	color: #dac1b1;
 }
 
-.formgroup textarea {
+.formGroup textarea {
 	resize: none;
 	width: 100%;
 	height: 100%;
@@ -132,8 +132,8 @@
 	color: #dac1b1;
 }
 
-.formgroup textarea:focus,
-.formgroup input:focus {
+.formGroup textarea:focus,
+.formGroup input:focus {
 	border: 2px solid #dac1b1; /* Change border color on focus */
 	outline: none;
 	/* Remove default focus outline */
@@ -203,6 +203,10 @@
 		margin-top: 20px;
 	}
 
+	.formGroup input,
+	.formGroup textarea {
+		width: 95%;
+	}
 	.submit {
 		margin: 10px 40px;
 		font-size: 20px;
@@ -259,6 +263,10 @@
 		font-size: 15px;
 		padding: 0;
 	}
+	.formGroup input,
+	.formGroup textarea {
+		width: 95%;
+	}
 }
 
 @media (min-width: 424px) and (max-width: 767px) {
@@ -305,6 +313,10 @@
 	.social {
 		font-size: 15px;
 		padding: 0;
+	}
+	.formGroup input,
+	.formGroup textarea {
+		width: 95%;
 	}
 }
 
@@ -355,7 +367,7 @@
 	}
 
 	.contactContainer p {
-		font-size: 50px;
+		font-size: 35px;
 		width: 900px;
 	}
 
@@ -368,45 +380,34 @@
 		height: auto;
 	}
 	.submit {
-		margin: 15px 56px;
-		font-size: 80px;
-		padding: 18px 85px;
+		margin: 55px 56px;
+		font-size: 60px;
+		padding: 28px 105px;
+		border-radius: 100px;
 	}
 
 	.formContainer h2 {
 		font-size: 90px;
 	}
 
-	.formgroup {
+	.formGroup {
 		margin-bottom: 10px;
 	}
 
-	.formgroup label {
+	.formGroup label {
 		margin-bottom: 10px;
 		font-size: 80px;
 	}
 
-	.formgroup input {
-		border: none;
-		background: transparent;
+	.formGroup input {
 		border-bottom: 2px solid #ac746c;
 		width: 36em;
-		outline: none;
 		font-size: 89px;
-		width: 100%;
-		color: #dac1b1;
+		width: 98%;
 	}
 
-	.formgroup textarea {
-		resize: none;
-		width: 100%;
-		height: 100%; /* Set a larger height for the textarea */
-		line-height: 1.6;
-		font-size: 50px;
-		background: transparent;
-		border: 2px solid #ac746c;
-		margin-top: 10px;
-		color: #dac1b1;
+	.formGroup textarea {
+		width: 98%;
 	}
 
 	.socials {

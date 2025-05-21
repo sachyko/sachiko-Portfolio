@@ -126,7 +126,7 @@ const Contact = () => {
 						{error && <div className="error-message">{error}</div>}
 
 						{/* Name input */}
-						<div className={styles.formgroup}>
+						<div className={styles.formGroup}>
 							<label htmlFor="name">Name</label>
 							<input
 								type="text"
@@ -140,7 +140,7 @@ const Contact = () => {
 						</div>
 
 						{/* Email input */}
-						<div className={styles.formgroup}>
+						<div className={styles.formGroup}>
 							<label htmlFor="email">Email</label>
 							<input
 								type="email"
@@ -154,7 +154,7 @@ const Contact = () => {
 						</div>
 
 						{/* Message input */}
-						<div className={styles.formgroup}>
+						<div className={styles.formGroup}>
 							<label htmlFor="message">Message</label>
 							<textarea
 								id="message"
